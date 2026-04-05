@@ -25,92 +25,11 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="liquid-bg liquid-bg--one"></div>
-    <div class="liquid-bg liquid-bg--two"></div>
-    <div class="liquid-bg liquid-bg--three"></div>
+    <div id="root"></div>
 
-    <header class="topbar glass">
-      <div class="brand">
-        <span class="material-symbols-outlined">keyboard</span>
-        <span>GadgetPro</span>
-      </div>
-      <nav>
-        <a href="#products">Products</a>
-        <a href="#why">Why GadgetPro</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <md-filled-button>Shop now</md-filled-button>
-    </header>
-
-    <main>
-      <section class="hero">
-        <p class="eyebrow">Precision Hardware. Liquid Elegance.</p>
-        <h1>Keyboards & Mice designed to feel like the future.</h1>
-        <p class="subhead">
-          GadgetPro combines minimal industrial design with pro-level performance,
-          inspired by the refined simplicity of Apple-style experiences.
-        </p>
-        <div class="hero-actions">
-          <md-filled-tonal-button>
-            <span slot="icon" class="material-symbols-outlined">shopping_bag</span>
-            Explore Collection
-          </md-filled-tonal-button>
-          <md-outlined-button>
-            <span slot="icon" class="material-symbols-outlined">play_circle</span>
-            Watch Demo
-          </md-outlined-button>
-        </div>
-      </section>
-
-      <section id="products" class="products">
-        <article class="product-card glass">
-          <div class="product-badge">Flagship</div>
-          <span class="material-symbols-outlined product-icon">keyboard</span>
-          <h2>AeroType Mechanical Keyboard</h2>
-          <p>
-            Low-profile tactile switches, smart backlighting, and crafted aluminum body
-            for creators and coders.
-          </p>
-          <md-text-button>Learn more</md-text-button>
-        </article>
-
-        <article class="product-card glass">
-          <div class="product-badge">New</div>
-          <span class="material-symbols-outlined product-icon">mouse</span>
-          <h2>FlowSense Precision Mouse</h2>
-          <p>
-            Ultra-responsive sensor, silent click system, and ergonomic shape for all-day
-            comfort and speed.
-          </p>
-          <md-text-button>Learn more</md-text-button>
-        </article>
-      </section>
-
-      <section id="why" class="features glass">
-        <h2>Why professionals choose GadgetPro</h2>
-        <div class="feature-grid">
-          <div>
-            <span class="material-symbols-outlined">deployed_code</span>
-            <h3>Seamless Device Switching</h3>
-            <p>Move instantly between laptop, tablet, and desktop with one touch.</p>
-          </div>
-          <div>
-            <span class="material-symbols-outlined">battery_charging_full</span>
-            <h3>Long Battery Life</h3>
-            <p>Weeks of productivity from a quick Type-C charge.</p>
-          </div>
-          <div>
-            <span class="material-symbols-outlined">shield</span>
-            <h3>Premium Build Quality</h3>
-            <p>Durable components engineered for reliability and comfort.</p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer id="contact" class="footer">
-      <p>© 2026 GadgetPro. Designed for creators, gamers, and builders.</p>
-      <md-filled-button>Contact Sales</md-filled-button>
-    </footer>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="app.jsx"></script>
   </body>
 </html>
